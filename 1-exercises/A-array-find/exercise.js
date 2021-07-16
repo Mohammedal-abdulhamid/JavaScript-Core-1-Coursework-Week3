@@ -16,8 +16,12 @@ var names = [
   "Karim",
   "Ahmed",
 ];
+//names.find(findLongNameThatStartsWithA);
+var longNameThatStartsWithA = names.find(findLongNameThatStartsWithA);
 
-var longNameThatStartsWithA = findLongNameThatStartsWithA(names);
+function findLongNameThatStartsWithA(element) {
+  return element.charAt(0) === "A" && element.length > 7;
+}
 
 console.log(longNameThatStartsWithA);
 

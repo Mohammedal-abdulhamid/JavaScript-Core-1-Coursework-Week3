@@ -8,7 +8,16 @@
 
 var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
 
-var pairsByIndex; // Complete this statement
+var pairsByIndex = pairsByIndexRaw.filter(isNotPair);
+// Complete this statement
+function isNotPair(pair) {
+  if (pairsByIndexRaw.isArray(pair)) {
+    // i'm not sure if this is the wright way
+    return true;
+  } else {
+    return false;
+  }
+}
 
 var students = ["Islam", "Lesley", "Harun", "Rukmini"];
 var mentors = ["Daniel", "Irina", "Mozafar", "Luke"];

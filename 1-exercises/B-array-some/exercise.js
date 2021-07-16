@@ -22,3 +22,12 @@ var pairs = pairsByIndex.map(function (indexes) {
 });
 
 console.log(pairs);
+
+/*const checkNullExitl = pairsByIndex.some(checkNull);
+function checkNull(pair) {
+  if (pair === null) {
+    return process.exit(1);
+  } else {
+    return pair;
+  }
+}*/
