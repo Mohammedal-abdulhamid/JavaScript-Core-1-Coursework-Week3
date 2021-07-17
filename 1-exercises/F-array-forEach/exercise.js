@@ -7,8 +7,22 @@
   An array with numbers 1-15 has been provided.
 */
 
-var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
+//var mapFunction = arr.map(multiply);
+function multiply(number) {
+  if (number % 3 === 0 && number != 15) {
+    return "Fizz";
+  } else if (number % 5 && number != 15) {
+    return "Buzz";
+  } else if (number % 15 === 0) {
+    return "FizzBuzz";
+  } else {
+    return number;
+  }
+}
+
+arr.forEach(console.log(multiply()));
 /* EXPECTED OUTPUT */
 
 /*
