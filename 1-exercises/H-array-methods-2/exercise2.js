@@ -8,10 +8,14 @@
 */
 
 function capitalise(str) {
-  var arr1 = str.split("").shift().toUpperCase();
-  var arr2 = str.split("").splice(0, 1, arr1);
-  var conArries = arr1.concat(arr2);
-  return arr2;
+  var arr1 = str.split("");//
+  arr1.forEach(element => {
+    element.toUpperCase();
+    
+  });;
+ // var arr2 = str.split("").splice(0, 1, arr1);
+ // var conArries = arr1.concat(arr2);
+  console.log( arr1);
 }
 console.log(capitalise("hello"));
 

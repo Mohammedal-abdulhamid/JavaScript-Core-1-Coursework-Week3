@@ -17,7 +17,7 @@
  Hint: search for string methods like Includes and IndexOf.
 */
 
-function checkCodeIsThere(stringText) {
+/*function checkCodeIsThere(stringText) {
   let magicWord = "code";
   //edit code below
   if (stringText) {
@@ -25,6 +25,15 @@ function checkCodeIsThere(stringText) {
   } else {
     return "Not found";
   }
+}*/
+function journeyPlanner(locations, transportMode) {
+  return locations
+    .filter((location) => {
+      return isAccessibleByTransportMode(location, transportMode);
+    })
+    .map((accessibleLocation) => {
+      return getLocationName(accessibleLocation);
+    });
 }
 
 /*
